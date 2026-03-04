@@ -42,3 +42,38 @@ samples, guidance on mobile development, and a full API reference.
 
 <img width="1862" height="672" alt="image" src="https://github.com/user-attachments/assets/4072a379-a38e-423b-b93f-02daf5b672be" />
 
+Para que puedas recrear o guardar la estructura exacta de estas pantallas en cualquier momento, aquí tienes el prompt técnico detallado. Este describe la jerarquía, los colores y el comportamiento de navegación que definimos:
+
+Prompt de Diseño: Kinsui Sushi App (Flutter)
+Contexto General:
+"Crea una aplicación en Flutter para un negocio de Sushi llamado 'Kinsui Sushi'. El diseño debe ser minimalista, usando una paleta de colores basada en blanco, negro y un tono café bajito (#F5E6D3) para encabezados."
+
+Pantalla 4: Confirmación de Orden
+
+Encabezado: AppBar blanco con una letra 'K' negra en negrita a la derecha.
+
+Cuerpo: En el centro, un círculo azul con un icono de 'check' (palomita) en color verde brillante. Debajo, el texto '¡Orden realizada!' en negrita.
+
+Interacción: Un botón de estilo 'ElevatedButton' color terracota que diga 'Siguiente' para navegar a la Pantalla 5.
+
+Pantalla 5: Catálogo de Productos con Menú Lateral (Stack)
+
+Encabezado: AppBar color café bajito (#F5E6D3). Título central: '📍 Calle falsa 123'. Icono de engranaje a la izquierda y 'K' a la derecha.
+
+Buscador: Una barra de búsqueda redondeada con borde gris, icono de lupa y un icono de carrito de compras al lado.
+
+Grid de Productos: Secciones tituladas 'Rollos más pedidos' y 'Rollos fríos'. Cada producto debe estar dentro de un contenedor con borde negro sólido (tipo marco), imagen en la parte superior, nombre y precio en la parte inferior.
+
+Funcionalidad Especial: Un icono de menú (hamburguesa) que, al presionarse, activa un panel superpuesto (Pantalla 6).
+
+Pantalla 6: Menú Lateral Deslizable (Overlay)
+
+Comportamiento: Debe aparecer desde la derecha usando un Stack, cubriendo aproximadamente el 60% de la pantalla para permitir ver los marcos de los rollos de la Pantalla 5 a la izquierda.
+
+Diseño:
+
+Header del Menú: Fondo café bajito con el texto 'Rollos más opciones' y un botón de cerrar (X).
+
+Lista: Elementos tipo ListTile con los nombres: 'Administrador', 'Compras', 'Trabajadores' y 'Envíos', cada uno con un icono de flecha (chevron) a la derecha.
+
+Pie de página: Texto con la versión '1.01' y firma del autor 'Cesar Loya Gpo 6I'.
